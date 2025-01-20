@@ -1,0 +1,43 @@
+{
+  "user": {
+    "id": "caca",
+    "tag": 2000,
+    "username": "Baba",
+    "hashword": "76DH82187DH"
+  },
+  "character": {
+    "profile": {
+      "displayName": "BrokHoly",
+      "heroName": "Triste Gueule",
+      "picture": "path/to/file",
+      "carrer": {
+        "class": "Psyker",
+        "rank": 1,
+        "specialize": "Biomancie"
+      },
+      "description": {}
+    },
+    "baseStats": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "skills": {
+      "basics": [],
+      "drive": {
+        "pilot": [],
+        "ground": []
+      },
+      "knowledges": {
+        "generalKnowledge": [],
+        "prohibedKnowledge": [],
+        "scholasticsKnowledge": []
+      },
+      "languages": []
+    },
+    "equipement": {
+      "armor": 0,
+      "weapons": []
+    }
+  },
+  "inventory": {},
+  "infos": {
+    "damages": 0
+  }
+}
