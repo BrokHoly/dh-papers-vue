@@ -6,15 +6,15 @@ export interface PlayerData {
 }
 
 export interface UserData {
-  id: string
-  tag: number
+  id: number
   username: string
   hashword: string
 }
 
 export interface CharacterData {
+  tag: number //comme ça username#tag ça renvoie vers un perso précis du joueur.
   profile: ProfileData
-  baseStats: string[]
+  baseStats: number[]
   skills: SkillsData
 }
 
@@ -36,7 +36,7 @@ export interface ProfileData {
   career: Career
   origin: OriginData
   description: DescriptionData
-}
+} // La picture sera récupérée via l'id + tag ou un truc du style genre osef.
 
 export interface SkillsData {
   basics: string[]

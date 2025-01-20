@@ -1,34 +1,39 @@
 {
   "user": {
-    "id": "caca",
-    "tag": 2000,
+    "id": 0,
     "username": "Baba",
     "hashword": "76DH82187DH"
   },
   "character": {
+    "tag": 2000,
     "profile": {
-      "displayName": "BrokHoly",
+      "playerName": "BrokHoly",
       "heroName": "Triste Gueule",
-      "picture": "path/to/file",
-      "carrer": {
+      "career": {
         "class": "Psyker",
         "rank": 1,
+        "branch": 0,
         "specialize": "Biomancie"
       },
-      "description": {}
+      "origin": {
+        "world": "Monde Perdu"
+      },
+      "description": {
+        "content": "",
+        "religion": "",
+        "ordo": "",
+        "hair": "",
+        "eyes": "",
+        "distinct": ""
+      }
     },
     "baseStats": [0, 0, 0, 0, 0, 0, 0, 0, 0],
     "skills": {
       "basics": [],
-      "drive": {
-        "pilot": [],
-        "ground": []
-      },
-      "knowledges": {
-        "generalKnowledge": [],
-        "prohibedKnowledge": [],
-        "scholasticsKnowledge": []
-      },
+      "drive": [],
+      "generalKnowledge": [],
+      "prohibedKnowledge": [],
+      "scholasticsKnowledge": [],
       "languages": []
     },
     "equipement": {
@@ -36,8 +41,13 @@
       "weapons": []
     }
   },
-  "inventory": {},
+  "inventory": {
+    "money": 70
+  },
   "infos": {
-    "damages": 0
+    "damages": 0,
+    "earnXP": 700,
+    "spendXP": 600,
+    "destinyPoints": 2
   }
 }
