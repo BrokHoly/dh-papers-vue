@@ -1,5 +1,13 @@
 # dh-papers-vue
 
+A basic RpG interface for WarHammer4000 Dark-Heresy.
+Fill your datas, roll the dices, and have fun ! <3
+
+@authors
+BrokHoly
+
+---
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
