@@ -13,11 +13,16 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/profile">Profile</RouterLink>
+        <!--Plus tard, ça pointera peut-être seulement vers la root ? '/'-->
+        <RouterLink to="/fight">Fight</RouterLink>
+        <RouterLink to="/party">Party</RouterLink>
       </nav>
     </div>
   </header>
 
   <RouterView />
+  <div class="diceRoller"></div>
 </template>
 
 <style scoped>
