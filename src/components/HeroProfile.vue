@@ -1,30 +1,28 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 
 import '../styles/ProfileStyle.css'
 
-import DATAS from '../assets/player_test/baba.json' //ça ça dégagera bien sûr.
+import DATAS from '../assets/player_test/baba$2000.json' //ça ça dégagera bien sûr.
 
 import type { PlayerData } from '@/interfaces/interfaces'
 
 import HeroPicture from './HeroPicture.vue'
+import HeroClass from './HeroClass.vue'
 
-const playerData: PlayerData = DATAS
-const heroName = ref<string>('')
-const heroTag = ref<number>(-1)
-const userID = ref<string>('')
-
-onMounted(() => {
-  heroName.value = playerData.character.profile.heroName
-  heroTag.value = playerData.character.tag
-  userID.value = playerData.user.username
-})
+const playerData = ref<PlayerData>(DATAS)
+const heroTag = ref<number>(playerData.value.character.tag)
+const userName = ref<string>(playerData.value.user.username)
 </script>
 
 <template>
   <div>
-    <h1>{{ heroName }}</h1>
-    <div>SALUT MOUAHAHAHA</div>
-    <HeroPicture :user-i-d="userID" :hero-tag="heroTag"></HeroPicture>
+    <HeroPicture :user-name="userName" :hero-tag="heroTag"></HeroPicture>
+    <h1>{{ playerData.character.profile.heroName }}</h1>
+    <p>{{ playerData.character.profile.playerName }}</p>
+    <HeroClass
+      :class="playerData.character.profile.career.class"
+      :rank="playerData.character.profile.career.rank"
+    ></HeroClass>
   </div>
 </template>

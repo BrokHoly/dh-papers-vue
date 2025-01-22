@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import '../styles/HeroPictureStyle.css'
 
 const props = defineProps({
-  userID: {
+  userName: {
     type: String,
     required: true,
   },
@@ -14,7 +14,7 @@ const props = defineProps({
 })
 
 const imageSrc = computed(() => {
-  return `/src/assets/player_test/${props.userID.toLowerCase()}$${props.heroTag}.png`
+  return `/src/assets/player_test/${props.userName.toLowerCase()}$${props.heroTag}.png`
 })
 
 const frameSrc = '/src/assets/dark-frame-shitty-crop.png'

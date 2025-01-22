@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { getRankName } from '../providers/ClassesProvider'
+
 const props = defineProps({
   class: {
     type: String,
@@ -17,6 +20,10 @@ const props = defineProps({
     required: false,
   },
 })
+
+const rankName = computed(() => {
+  return getRankName(props.class, props.rank, props.branch)
+})
 </script>
 
 <template>
@@ -25,6 +32,9 @@ const props = defineProps({
       <span>{{ props.class }}</span
       ><span v-if="specialize">/ {{ specialize }}</span>
     </p>
-    <span>rank:{{}}</span>
+    <p>
+      <span>rank:{{ props.rank }}</span>
+      <span v-if="rankName">{{ rankName }}</span>
+    </p>
   </div>
 </template>
