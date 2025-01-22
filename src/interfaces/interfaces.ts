@@ -8,7 +8,6 @@ export interface PlayerData {
 export interface UserData {
   id: number
   username: string
-  hashword: string
 }
 
 export interface CharacterData {
@@ -33,7 +32,7 @@ export interface InfosData {
 export interface ProfileData {
   heroName: string
   playerName: string
-  career: Career
+  career: CareerData
   origin: OriginData
   description: DescriptionData
 } // La picture sera récupérée via l'id + tag ou un truc du style genre osef.
@@ -55,7 +54,7 @@ export interface SkillsData {
 //needed interfaces
 
 //ProfileDatas
-export interface Career {
+export interface CareerData {
   rank: number
   branch: number //to know the name of the rank ? Like, for a Psyker, when the rank is >=3, the player have to chose between two ways so....
   class: string
