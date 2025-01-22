@@ -1,3 +1,5 @@
+//For now, this is a realy realy basic provider that only works for proof of concept.
+//In futur, it will extract the datas from the csv files.
 import type { ClassData } from '@/interfaces/bookInterface'
 
 function getRankName(className: string, rank: number, branch?: number): string {
@@ -10,4 +12,4 @@ function getClassData(className: string): ClassData {
   return { name: className, ranks: [{ names: ['Neophyte'] }] } //from the classes_data.csv
 }
 
-export { getRankName }
+export { getRankName, getClassData }
