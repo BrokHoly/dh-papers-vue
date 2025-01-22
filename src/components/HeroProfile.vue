@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import '../styles/ProfileStyle.css'
-
 import DATAS from '../assets/player_test/baba$2000.json' //ça ça dégagera bien sûr.
 
 import type { PlayerData } from '@/interfaces/interfaces'

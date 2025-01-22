@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import '../styles/HeroPictureStyle.css'
 
 const props = defineProps({
   userName: {
