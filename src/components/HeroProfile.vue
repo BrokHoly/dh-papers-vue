@@ -7,6 +7,7 @@ import type { PlayerData } from '@/interfaces/interfaces'
 
 import HeroPicture from './HeroPicture.vue'
 import HeroClass from './HeroClass.vue'
+import BornPlanet from './BornPlanet.vue'
 
 const playerData = ref<PlayerData>(DATAS)
 const heroTag = ref<number>(playerData.value.character.tag)
@@ -22,6 +23,7 @@ const userName = ref<string>(playerData.value.user.username)
       :class="playerData.character.profile.career.class"
       :rank="playerData.character.profile.career.rank"
     ></HeroClass>
+    <BornPlanet :world="playerData.character.profile.origin.world"></BornPlanet>
   </div>
 </template>
 
