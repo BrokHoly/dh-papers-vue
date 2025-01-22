@@ -3,6 +3,14 @@
 A basic RpG interface for WarHammer4000 Dark-Heresy.
 Fill your datas, roll the dices, and have fun ! <3
 
+The data of a user and his characters are structured like that :
+
+- \<username>.json -> contains the basic data of a user, like his username agein, his id, and a finalHashword. This file should be only available on server side. and never sent to the client. can be updated (but never the client shouldnt be able to change things like the user owner or other critical things.)
+- \<username>$<tag>.json/png -> The data of a specific character of the user. contains some basic infos of the user.
+- skills\_\<username>$<tag>.json -> for the data about skills of the character. Can be updated
+
+For security, why not saves a the username and the hashword in the cookies, and this hashword is re-hashed on server side to obtain the final hashword that permit the authentication. So no saving of a real password.
+
 @authors
 BrokHoly
 

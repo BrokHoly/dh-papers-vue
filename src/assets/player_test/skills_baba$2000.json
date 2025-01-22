@@ -1,0 +1,6 @@
+{
+  "Acrobatie": { "stat": "ag", "level": 0 },
+  "Alphabétisation": { "stat": "int", "level": 0 },
+  "Baratin": { "stat": "soc", "level": 0 },
+  "Charisme": { "stat": "soc", "level": 1 }
+}

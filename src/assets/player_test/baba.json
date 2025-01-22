@@ -1,53 +1,6 @@
 {
-  "user": {
-    "id": 0,
-    "username": "Baba",
-    "hashword": "76DH82187DH"
-  },
-  "character": {
-    "tag": 2000,
-    "profile": {
-      "playerName": "BrokHoly",
-      "heroName": "Triste Gueule",
-      "career": {
-        "class": "Psyker",
-        "rank": 1,
-        "branch": 0,
-        "specialize": "Biomancie"
-      },
-      "origin": {
-        "world": "Monde Perdu"
-      },
-      "description": {
-        "content": "",
-        "religion": "",
-        "ordo": "",
-        "hair": "",
-        "eyes": "",
-        "distinct": ""
-      }
-    },
-    "baseStats": [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    "skills": {
-      "basics": [],
-      "drive": [],
-      "generalKnowledge": [],
-      "prohibedKnowledge": [],
-      "scholasticsKnowledge": [],
-      "languages": []
-    },
-    "equipement": {
-      "armor": 0,
-      "weapons": []
-    }
-  },
-  "inventory": {
-    "money": 70
-  },
-  "infos": {
-    "damages": 0,
-    "earnXP": 700,
-    "spendXP": 600,
-    "destinyPoints": 2
-  }
+  "id": 0,
+  "username": "Baba",
+  "hashword": "76DH82187DH",
+  "tags": [2000]
 }
