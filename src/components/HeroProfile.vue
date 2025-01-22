@@ -26,3 +26,5 @@ const userName = ref<string>(playerData.value.user.username)
     ></HeroClass>
   </div>
 </template>
+
+<style></style>
